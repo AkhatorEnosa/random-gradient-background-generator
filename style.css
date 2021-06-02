@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+	/*background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+#gradient {
+	transition: all 0.5s ease-in-out;
+}
+
+.main {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+h1 {
+    font-size: 20px;
+    font-style: bold;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.colors {
+    width: 600px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+span {
+    position: relative;
+    bottom: 30px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+input[type="color"]{
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    outline: none;
+    background: none;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+.button{
+    outline: none;
+    width: auto;
+    height: 60px;
+    font-family: tahArial, Helvetica, sans-serifoma;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button:hover{
+   background: rgba(255,255,255,0.7);
+}
+
+.button1{
+    outline: none;
+    width: auto;
+    height: 60px;
+    font-family: tahArial, Helvetica, sans-serifoma;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button1:hover{
+   background: rgba(255,255,255,0.7);
+}
+
+.button2{
+    outline: none;
+    width: auto;
+    height: 60px;
+    font-family: tahArial, Helvetica, sans-serifoma;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button2:hover{
+   background: rgba(255,255,255,0.7);
+}
+
+.copy {
+    opacity: 0;
+}
+
+/* .message {
+    color: red;
+    letter-spacing: 0.2em;
+} */
+
+h3 {
+	font: 600 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
