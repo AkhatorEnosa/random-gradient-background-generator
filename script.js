@@ -15,6 +15,8 @@ var randomValue = "abcdef1234567890";
 function getAndSetGradient() {
 	circle.style.background = "linear-gradient(to right, "+ color1.value + ", "+ color2.value + ")";
 	hiddenInput.value = circle.style.background;
+	colVal1.textContent = "(Hex)>  " + color1.value;
+	colVal2.textContent = "(Hex)>  " + color2.value;
 }
 
 function setRandomValue1(){
@@ -36,8 +38,8 @@ function setRandomValue2(){
 function newGradientValue(){
 	color1.value = "#" + setRandomValue1();
 	color2.value = "#" + setRandomValue2();
-	colVal1.textContent = "(Hex)>  " + color1.value;
-	colVal2.textContent = "(Hex)>  " + color2.value;
+	// colVal1.textContent = "(Hex)>  " + color1.value;
+	// colVal2.textContent = "(Hex)>  " + color2.value;
 	getAndSetGradient();
 }
 
