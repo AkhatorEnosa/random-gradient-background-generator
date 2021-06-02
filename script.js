@@ -1,3 +1,4 @@
+// initialize parts of the webpage
 var body = document.getElementById("gradient");
 var circle = document.querySelector(".circle");
 var color1 = document.querySelector(".color1");
@@ -9,6 +10,7 @@ var button1 = document.querySelector(".button1");
 var button2 = document.querySelector(".button2");
 var hiddenInput = document.querySelector(".copy");
 var randomValue = "abcdef1234567890";
+
 
 function getAndSetGradient() {
 	circle.style.background = "linear-gradient(to right, "+ color1.value + ", "+ color2.value + ")";
@@ -34,8 +36,8 @@ function setRandomValue2(){
 function newGradientValue(){
 	color1.value = "#" + setRandomValue1();
 	color2.value = "#" + setRandomValue2();
-	colVal1.textContent = color1.value;
-	colVal2.textContent = color2.value;
+	colVal1.textContent = "Hex " + color1.value;
+	colVal2.textContent = "Hex " + color2.value;
 	getAndSetGradient();
 }
 
