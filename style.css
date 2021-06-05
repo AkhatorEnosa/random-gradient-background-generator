@@ -129,7 +129,10 @@ input[type="button"] {
 }
 
 .copy {
-    opacity: 0;
+    opacity: 1;
+    width: 0px;
+    position:absolute;
+    right: 120%;
 }
 
 /* .message {
