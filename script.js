@@ -8,6 +8,7 @@ var colVal2= document.querySelector(".color-2");
 var button = document.querySelector(".button");
 var button1 = document.querySelector(".button1");
 var button2 = document.querySelector(".button2");
+var tooltip = document.querySelector(".tooltiptext");
 var hiddenInput = document.querySelector(".copy");
 var randomValue = "abcdef1234567890";
 
@@ -61,13 +62,23 @@ function copyText(){
 	
 	/* Copy the text inside the text field */
 	if (document.execCommand("copy")) {
+		tooltip.style.visibility = "visible";
+		tooltip.style.opacity = 1;
+
+		// console.log(true);
+
+		setTimeout(() => {
+			tooltip.style.visibility = "hidden";
+			tooltip.style.opacity = 0;
+		}, 2500);
+
 		console.log(true)
 	} else {
 		console.log(false)
 	}
 	
 	/* Alert the copied text */
-	alert("Gradient background color: " + hiddenInput.value + " copied to clipboard!");
+	// alert("Gradient background color: " + hiddenInput.value + " copied to clipboard!");
 }
 
 window.addEventListener("load", getAndSetGradient);
