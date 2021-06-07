@@ -11,20 +11,34 @@ body {
 	transition: background 1000ms linear;
 } */
 
-.main {
+.header {
+    display: block;
+    margin: 40px;
+}
+
+.logo {
     position: relative;
-    width: auto;
-    height: 100%;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
 }
 
 h1 {
+    position: relative;
     font-size: 20px;
     font-style: bold;
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+    padding-bottom: 20px;
+}
+
+.main {
+    position: relative;
+    width: auto;
+    height: 100%;
 }
 
 .circle {
