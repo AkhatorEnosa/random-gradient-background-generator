@@ -65,6 +65,10 @@ function copyText(){
 		tooltip.style.visibility = "visible";
 		tooltip.style.opacity = 1;
 
+		setTimeout(() => {
+			hiddenInput.style.visibility = "hidden";
+		}, 10);
+
 		// console.log(true);
 
 		setTimeout(() => {
