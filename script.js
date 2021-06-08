@@ -10,22 +10,16 @@ var button1 = document.querySelector(".button1");
 var button2 = document.querySelector(".button2");
 var tooltip = document.querySelector(".tooltiptext");
 var hiddenInput = document.querySelector(".copy");
-var randomValue = "abcdef1234567890";
+var randomValue = "a789bc456a789bc456def1230def12a789bc456def123030";
 
-
-function getAndSetGradient() {
-	circle.style.background = "linear-gradient(to right, "+ color1.value + ", "+ color2.value + ")";
-	hiddenInput.value = circle.style.background;
-	colVal1.textContent = "(Hex)>  " + color1.value;
-	colVal2.textContent = "(Hex)>  " + color2.value;
-}
+document.querySelector(".buttons").style.opacity = 1;
 
 function setRandomValue1(){
 	var shuffled = randomValue.split('').sort(function(){
 		return 0.5-Math.random()
 	}).join('');
 	
-	 return shuffled.substring(0,6);
+	return shuffled.substring(0,6);
 }
 
 function setRandomValue2(){
@@ -33,7 +27,14 @@ function setRandomValue2(){
 		return 0.5-Math.random()
 	}).join('');
 	
-	 return shuffled.substring(0,6);
+	return shuffled.substring(0,6);
+}
+
+function getAndSetGradient() {
+	circle.style.background = "linear-gradient(to right, "+ color1.value + ", "+ color2.value + ")";
+	hiddenInput.value = circle.style.background;
+	colVal1.textContent = "(Hex)>  " + color1.value;
+	colVal2.textContent = "(Hex)>  " + color2.value;
 }
 
 function newGradientValue(){
@@ -46,9 +47,9 @@ function newGradientValue(){
 
 function addBackground() {
 	body.style.background = "linear-gradient(to right, "+ color1.value + ", "+ color2.value + ")";
-	document.querySelector("h1").style.color = "white";
-	colVal1.style.color = "white";
-	colVal2.style.color = "white";
+	document.querySelector("h1").style.cssText = "color: white; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px;";
+	colVal1.style.cssText = "color: white; background: rgba(0,0,0,0.5); padding: 5px; border-radius: 4px;";
+	colVal2.style.cssText = "color: white; background: rgba(0,0,0,0.5); padding: 5px; border-radius: 4px;";
 	button.style.border = "none";
 	button1.style.border = "none";
 	button2.style.border = "none";
