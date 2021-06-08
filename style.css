@@ -84,6 +84,12 @@ input[type="color"]::-webkit-color-swatch {
     border-radius: 50px;
 }
 
+.buttons {
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    transition-delay: 0.2s;
+}
+
 input[type="button"] {
     cursor: pointer;
 }
@@ -111,11 +117,7 @@ input[type="button"]:hover {
     border: 2px solid black;
 }
 
-.buttons {
-    opacity: 0;
-    transition: 0.5s all ease-in-out;
-    transition-delay: 0.2s;
-}
+
 
 /* .button{
     
@@ -198,8 +200,8 @@ h3 {
   /* Position the tooltip text */
   position: relative;
   z-index: 1;
-  bottom: 50px;
-  left: -8%;
+  bottom: 90px;
+  left: 17%;
   margin-left: -60px;
 
   /* Fade in tooltip */
