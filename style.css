@@ -13,10 +13,9 @@
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     width: 70px;
     height: 70px;
-    margin-right: 20px;
 }
 
 h1 {
