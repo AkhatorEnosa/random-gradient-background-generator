@@ -1,3 +1,8 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
 #gradient {
     font-family: 'Montserrat', sans-serif;
     color: rgba(0,0,0,.5);
@@ -21,7 +26,7 @@ h1 {
     position: relative;
     font-size: 20px;
     font-style: bold;
-    color: rgba(0,0,0,.5);
+    color: rgba(240, 26, 26, 0.5);
     text-align: center;
     text-transform: uppercase;
     width: 500px;
@@ -90,6 +95,7 @@ input[type="color"]::-webkit-color-swatch {
 
 input[type="button"] {
     cursor: pointer;
+    margin-top: 10px;
 }
 
 input[type="button"] {
@@ -126,17 +132,28 @@ input[type="button"]:hover {
 }
 
 .modal-content {
+    position: absolute;
     letter-spacing: normal;
-    width: 40%;
-    height: 40%;
+    width: 500px;
+    height: 300px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%); 
     padding: 20px;
     background-color: white;
     box-shadow: 0px 3px solid #ccc;
     border-radius: 5px;
+    transition: 0.2s all ease-in-out;
 }
 
 .modal-content div {
-    
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal-content h1 {
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 .modal-content button {
@@ -147,7 +164,11 @@ input[type="button"]:hover {
     background: linear-gradient(to right, rgb(244, 61, 133), rgb(224, 75, 94));
     color: white;
     font-weight: bold;
+    transition: 0.2s all ease-in-out;
+}
 
+.modal-content button:hover {
+    box-shadow: 0px 4px 15px rgba(244, 61, 133, 0.8); 
 }
 
 /* .button{
@@ -203,14 +224,6 @@ input[type="button"]:hover {
     letter-spacing: 0.2em;
 } */
 
-h3 {
-	font: 600 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0.01em;
-}
-
 
 /* Tooltip text */
 .tooltiptext {
@@ -258,3 +271,218 @@ h3 {
   visibility: visible;
   opacity: 1;
 } */
+
+@media (max-width: 500px), (max-width:550px ) {
+
+    #gradient {
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .header {
+        display: block;
+        position: relative;
+        top: -10px;
+    }
+
+    .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    h1 {
+        width: fit-content;
+        font-size: 15px;
+        font-style: bold;
+        color: rgba(240, 26, 26, 0.5);
+        margin: 0px auto;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .main {
+        position: absolute;
+        width: 100vw;
+        height: auto;
+    }
+
+    .circle {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .colors {
+        position: relative;
+        width: 100vw;
+        text-align: center;
+    }
+
+    span {
+        position: relative;
+        bottom: 30px;
+        text-decoration: underline;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-size: 0.6rem;
+    }
+
+    input[type="color"]{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border-radius: 100px;
+        margin-bottom: 20px;
+        outline: none;
+        background: none;
+        border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+        border: none;
+        border-radius: 50px;
+    }
+
+    .buttons {
+        opacity: 0;
+        transition: 0.5s all ease-in-out;
+        transition-delay: 0.2s;
+    }
+
+    input[type="button"] {
+        cursor: pointer;
+        font-size: 0.5rem;
+        position: relative;
+        outline: none;
+        border: none;
+        font-family: tahArial, Helvetica, sans-serifoma;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    input[type="button"]:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    input[type="button"]:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+    }
+/*
+    .modal {
+        background-color:rgba(0, 0, 0, 0.8);
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        z-index:1000;
+    }
+
+    .modal-content {
+        position: absolute;
+        letter-spacing: normal;
+        width: 500px;
+        height: 300px;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%); 
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 3px solid #ccc;
+        border-radius: 5px;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .modal-content div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+    .modal-content h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .modal-content button {
+        outline: none;
+        border: none;
+        padding: 20px;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, rgb(244, 61, 133), rgb(224, 75, 94));
+        color: white;
+        font-weight: bold;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .modal-content button:hover {
+        box-shadow: 0px 4px 15px rgba(244, 61, 133, 0.8); 
+    }
+ */
+    .copy {
+        width: 1px;
+        position:absolute;
+        right: 120%;
+    }
+
+    /* Tooltip text */
+    .tooltiptext {
+    visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-transform: none;
+    text-decoration: none;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 5px;
+    padding-left: 15px;
+    text-align: center;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: relative;
+    z-index: 1;
+    bottom: 90px;
+    left: 7%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    /* Tooltip arrow */
+    .tooltiptext::after {
+    content: "";
+    position: relative;
+    bottom: -20px;
+    left: -2.5%;
+    z-index: 1;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    }
+}
