@@ -105,7 +105,7 @@ input[type="button"] {
     height: 60px;
     font-family: tahArial, Helvetica, sans-serifoma;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-transform: uppercase;
@@ -116,9 +116,8 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background: rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(244, 61, 133), rgb(224, 75, 94));
     color: rgb(255, 255, 255);
-    border: 2px solid black;
 }
 
 .modal {
@@ -384,9 +383,8 @@ input[type="button"]:hover {
     }
 
     input[type="button"]:hover {
-        background: rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(244, 61, 133), rgb(224, 75, 94));
         color: rgb(255, 255, 255);
-        border: 2px solid black;
     }
 
     .modal {
