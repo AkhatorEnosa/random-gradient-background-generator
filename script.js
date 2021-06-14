@@ -10,6 +10,7 @@ var button1 = document.querySelector(".button1");
 var button2 = document.querySelector(".button2");
 var tooltip = document.querySelector(".tooltiptext");
 var hiddenInput = document.querySelector(".copy");
+var modalClose = document.querySelector(".modal-close");
 var randomValue = "a789bc456a789bc456def1230def12a789bc456def123030";
 
 document.querySelector(".buttons").style.opacity = 1;
@@ -86,6 +87,10 @@ function copyText(){
 	// alert("Gradient background color: " + hiddenInput.value + " copied to clipboard!");
 }
 
+function closeModal() {
+	document.querySelector(".modal").parentNode.removeChild(document.querySelector(".modal"));
+}
+
 window.addEventListener("load", getAndSetGradient);
 
 window.addEventListener("load", newGradientValue);
@@ -99,3 +104,5 @@ button2.addEventListener("click", copyText);
 color1.addEventListener("input", getAndSetGradient);
 
 color2.addEventListener("input", getAndSetGradient);
+
+modalClose.addEventListener("click", closeModal);
