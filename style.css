@@ -76,14 +76,14 @@ input[type="color"]{
     outline: none;
     background: none;
     border: 2px solid rgba(255,255,255,0.5);
-    animation-duration: 1s;
+    /* animation-duration: 1s;
     animation-name: pulse;
     animation-direction: alternate;
     animation-iteration-count: 8;
-    animation-delay: 5s;
+    animation-delay: 5s; */
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   from {
     transform: scale(1);
   }
@@ -91,7 +91,7 @@ input[type="color"]{
   to {
       transform: scale(0.8);
   }
-}
+} */
 
 input[type="color"]::-webkit-color-swatch-wrapper {
     padding: 0;
@@ -495,5 +495,27 @@ input[type="button"]:hover {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
+    }
+}
+
+@media (max-width: 370px) {
+    .modal-content div{
+        font-size: 0.6rem;
+    }
+
+    .modal-content h1 {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .modal-content button {
+        outline: none;
+        border: none;
+        padding: 20px;
+        margin-top: 7px;
+        font-size: 0.5rem;
+        background: linear-gradient(to right, rgb(244, 61, 133), rgb(224, 75, 94));
+        color: white;
+        transition: 0.2s all ease-in-out;
     }
 }
